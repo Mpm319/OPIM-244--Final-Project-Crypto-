@@ -1,1 +1,1 @@
-gunicorn crypto_routes:create_app()
+gunicorn Crypto_App:create_app()

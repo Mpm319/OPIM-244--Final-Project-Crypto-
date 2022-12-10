@@ -4,7 +4,7 @@ from Cryptowebapp.crypto import fetch_crypto_data, format_usd
 
 crypto_routes = Blueprint("crypto_routes", __name__)
 
-@stocks_routes.route("/crypto/form")
+@crypto_routes.route("/crypto/form")
 def crypto_form():
     print("crypto FORM...")
     return render_template("crypto_form.html")

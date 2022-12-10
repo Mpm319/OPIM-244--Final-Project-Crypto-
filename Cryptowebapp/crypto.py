@@ -1,10 +1,13 @@
 ##run the app
-import Crypto_App
-import os
+###
+from Cryptowebapp.alpha import API_KEY
+
+#import Crypto_App
+#import os
 
 from pandas import read_csv
-from getpass import getpass
-import plotly.express as px
+#from getpass import getpass
+#import plotly.express as px
 
 
 API_KEY = getpass("Please input your AlphaVantage API Key: ") 

@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 
 from crypto_app.crypto_routes import crypto_routes
 

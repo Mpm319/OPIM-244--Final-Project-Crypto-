@@ -9,7 +9,7 @@ def create_app():
 
     app.register_blueprint(crypto_routes)
 
-    web: gunicorn Crypto_App:create_app()
+    web: gunicorn Crypto_App:app
 
     return app
 

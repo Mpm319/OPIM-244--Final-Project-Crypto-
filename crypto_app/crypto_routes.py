@@ -1,6 +1,6 @@
 from flask import Blueprint, request, render_template, redirect, flash
 
-from Cryptowebapp.crypto import 
+from Cryptowebapp.crypto import fetch_crypto_data, format_usd
 
 crypto_routes = Blueprint("crypto_routes", __name__)
 

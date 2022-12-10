@@ -4,7 +4,7 @@ from crypto_app.crypto_routes import crypto_routes
 
 
 def create_app():
-    app=flask(__name__)
+    app=Flask(__name__)
 
     app.register_blueprint(crypto_routes)
 

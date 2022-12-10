@@ -1,5 +1,7 @@
 # OPIM-244--Final-Project-Crypto-
 
+# This code is a script that can be used to analyze cryptocurrency data. It takes in a crypto symbol (e.g. BTC, ETH, etc) from the user and uses the AlphaVantage API to get the CSV data of the daily prices associated with the symbol. After the data is retrieved, the code performs calculations to get the latest adjusted close, the average price and the average daily trading volume over the past year, and the percent change from the last year. Finally, it produces a plotly scatter plot of the daily stock prices.
+
 ##setup
 
 Create and activate a virtual environment

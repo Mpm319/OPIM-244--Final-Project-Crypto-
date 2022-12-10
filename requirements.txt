@@ -6,7 +6,7 @@ requests
 
 plotly
 
-import Crypto_App
+
 pytest
 
 sendgrid==6.6.0

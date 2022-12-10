@@ -1,0 +1,1 @@
+web: guinicorn "Crypto_App:create_app()"

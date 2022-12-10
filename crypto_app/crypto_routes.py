@@ -4,12 +4,12 @@ from Cryptowebapp.crypto import
 
 crypto_routes = Blueprint("crypto_routes", __name__)
 
-@stocks_routes.route("/stocks/form")
+@stocks_routes.route("/crypto/form")
 def crypto_form():
-    print("STOCKS FORM...")
+    print("crypto FORM...")
     return render_template("stocks_form.html")
 
-@crypto_routes.route("/stocks/dashboard", methods=["GET", "POST"])
+@crypto_routes.route("/crypto/dashboard", methods=["GET", "POST"])
 def crypto_dashboard():
     print("CRYPTO DASHBOARD...")
 

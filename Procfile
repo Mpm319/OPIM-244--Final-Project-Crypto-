@@ -1,1 +1,1 @@
-gunicorn Crypto_App:create_app()
+gunicorn crypto_app:create_app()

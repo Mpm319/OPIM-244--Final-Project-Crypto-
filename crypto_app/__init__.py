@@ -1,12 +1,15 @@
 from flask import Flask
 
-from crypto_app.crypto_routes import crypto_routes
+from Crypto_App.crypto_routes import crypto_routes
+
 
 
 def create_app():
     app=Flask(__name__)
 
     app.register_blueprint(crypto_routes)
+
+    gunicorn Crypto_App:create_app()
 
     return app
 

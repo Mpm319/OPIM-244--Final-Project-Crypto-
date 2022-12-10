@@ -1,4 +1,4 @@
-from app.stocks import format_usd, fetch_stocks_data
+from Cryptowebapp.crypto import format_usd, fetch_stocks_data
 
 from pandas import DataFrame
 

@@ -1,1 +1,1 @@
-web: guinicorn "Crypto_App:create_app()"
+web: gunicorn "Crypto_App:create_app()"

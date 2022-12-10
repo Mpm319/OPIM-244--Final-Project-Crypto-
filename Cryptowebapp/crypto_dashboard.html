@@ -1,9 +1,9 @@
 {% extends "bootstrap_5_layout.html" %}
-{% set active_page = "stocks_dashboard" %}
+{% set active_page = "crypto_dashboard" %}
 
 {% block content %}
 
-    <h2>Stocks Dashboard ({{ symbol }})</h2>
+    <h2>crypto_dashboard Dashboard ({{ symbol }})</h2>
 
     <p class="lead">Latest Close: {{ latest_close_usd }} (as of {{ latest_date }})</p>
 
@@ -12,20 +12,20 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script type="text/javascript">
 
-        console.log("STOCKS DASHBOARD...")
+        console.log("CRYPTO DASHBOARD...")
 
         // use data from the router!
         var symbol = '{{ symbol }}'
-        //var stockData = JSON.parse('{{ data }}')
-        //var stockData = '{{ data }}'
-        var stockData = JSON.parse('{{data | tojson}}') // https://stackoverflow.com/a/45132694/670433
-        console.log(stockData)
+        //var cryptoData = JSON.parse('{{ data }}')
+        //var cryptoData = '{{ data }}'
+        var cryptoData = JSON.parse('{{data | tojson}}') // https://stackoverflow.com/a/45132694/670433
+        console.log(cryptoData)
 
-        //var tsd = stockData["Time Series (Daily)"]
+        //var tsd = cryptoData["Time Series (Daily)"]
         //var dates = Object.keys(tsd)
         //var dailyPrices = Object.values(tsd)
-        var dates = stockData.map(obj => obj["timestamp"])
-        var closingPrices = stockData.map(obj => obj["adjusted_close"])
+        var dates = cryptoData.map(obj => obj["timestamp"])
+        var closingPrices = cryptoData.map(obj => obj["close (USD)"])
 
         // visualize the data
         // see: https://plotly.com/javascript/line-charts/
@@ -36,7 +36,7 @@
         }
         var data = [series]
         var layout = {
-            title: "Daily Closing Prices for Stock: " + symbol,
+            title: "Daily Closing Prices for Crypto: " + symbol,
             height: 600,
             yaxis: {
                 tickformat: '$' // https://plotly.com/javascript/tick-formatting/

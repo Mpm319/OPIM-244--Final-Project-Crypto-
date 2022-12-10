@@ -7,7 +7,7 @@ crypto_routes = Blueprint("crypto_routes", __name__)
 @stocks_routes.route("/crypto/form")
 def crypto_form():
     print("crypto FORM...")
-    return render_template("stocks_form.html")
+    return render_template("crypto_form.html")
 
 @crypto_routes.route("/crypto/dashboard", methods=["GET", "POST"])
 def crypto_dashboard():

@@ -1,4 +1,5 @@
 ##Set up to convert numbers to USD
+import Crypto_App
 
 def to_usd(my_price):
     

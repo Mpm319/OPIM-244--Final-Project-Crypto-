@@ -1,0 +1,1 @@
+web: guinicorn "Crypot_App:create_app()"

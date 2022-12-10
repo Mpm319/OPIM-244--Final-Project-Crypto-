@@ -1,1 +1,1 @@
-web: guinicorn "Crypot_App:create_app()"
+web: guinicorn "Crypto_App:create_app()"
